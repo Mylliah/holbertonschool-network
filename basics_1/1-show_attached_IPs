@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays all active IPv4 IPs on this machine
+
+hostname -I | tr ' ' '\n' | grep -v '^$'
