@@ -22,4 +22,8 @@ TCP/UDP
     - Memorize SSH, HTTP and HTTPS port numbers
     - What tool/protocol is often used to check if a device is connected to a network
 
-## Project 2 : 
+## Project 2 : Networking basics #1
+    - What is localhost/127.0.0.1
+    - What is 0.0.0.0
+    - What is /etc/hosts
+    - How to display your machine’s active network interfaces
