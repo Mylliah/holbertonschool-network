@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Adds the required entries at the top of /etc/hosts without removing existing content (requires sudo)
+# Adds custom IP mappings to /etc/hosts
 
-sudo cp /etc/hosts /etc/hosts.bak
-echo -e "127.0.0.2 localhost\n8.8.8.8 facebook.com" | cat - /etc/hosts.bak | sudo tee /etc/hosts > /dev/null
+echo "127.0.0.2 localhost" | tee -a /etc/hosts
+echo "8.8.8.8 facebook.com" | tee -a /etc/hosts
