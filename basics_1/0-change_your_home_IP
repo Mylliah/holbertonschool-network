@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script overrides local resolution of localhost and facebook.com using /etc/hosts
+# Adds custom IP mappings to /etc/hosts (requires sudo)
 
-echo "127.0.0.2 localhost" | tee -a /etc/hosts
-echo "8.8.8.8 facebook.com" | tee -a /etc/hosts
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
