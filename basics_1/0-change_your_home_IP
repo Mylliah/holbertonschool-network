@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Adds custom IP mappings to /etc/hosts (requires sudo)
 
-echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts >/dev/null
-echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
+sudo sed -i '1i127.0.0.2 localhost' /etc/hosts
+sudo sed -i '1i8.8.8.8 facebook.com' /etc/hosts
