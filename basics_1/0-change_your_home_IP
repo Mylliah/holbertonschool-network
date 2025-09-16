@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Adds the resolutions to the beginning of /etc/hosts (without removing the rest)
+# Adds the requested resolutions to /etc/hosts (requires sudo)
 
-sudo cp /etc/hosts /etc/hosts.bak
-echo -e "127.0.0.2 localhost\n8.8.8.8 facebook.com" | cat - /etc/hosts.bak | sudo tee /etc/hosts > /dev/null
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
