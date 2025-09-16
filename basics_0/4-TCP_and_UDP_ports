@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+# Show open TCP/UDP ports (sudo required)
+
 sudo netstat -tulnp
